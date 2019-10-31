@@ -20,9 +20,12 @@ html {
 /* ----------------------------------------------- */
 /* HERO*/
 /* ----------------------------------------------- */
-/* .hero{
-    background-attachment: fixed;
-} */
+.hero{
+    /* background-attachment: fixed; */
+    opacity: 0;
+    animation: fadeInUP  1s ease-in 1s both;
+    -webkit-animation: fadeInUp 1s ease-in 1s both;
+}
 
  header {
     display: flex;
@@ -46,8 +49,8 @@ html {
     background-attachment: fixed;
     align-items: flex-start;
     justify-content: center;
-    
-   
+    /* opacity: 0; */
+  
 }
  
  
@@ -74,8 +77,13 @@ h1 {
     font-weight: 300;
     font-family: 'Lexend Mega', sans-serif;
     padding-top: 8%;
-    /* padding-bottom: 1%; */
+    Opacity: 0;
+    animation: fadeInUP 1s ease-in 1s both;
+    -webkit-animation: fadeInUp 1s ease-in 1s both;
 }
+    
+    /* padding-bottom: 1%; */
+
 
 h2{
     margin: 0;
@@ -83,9 +91,13 @@ h2{
     font-size: 200%;
     font-weight: 200;
     font-family: 'Dawning of a New Day', cursive;
-
-
+    opacity: 0;
+    animation: fadeInUP 1s ease-in 1s both;
+    -webkit-animation: fadeInUp 1s ease-in 1s both;
 }
+
+
+
 
 .header-text {
     position: relative;
@@ -94,6 +106,7 @@ h2{
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+    
     
 }
 
@@ -213,6 +226,11 @@ h4{
   
 }
 
+h4 a{
+    color: #fff;
+    text-decoration: none;
+}
+
 
 /* ----------------------------------------------- */
 /* SHOP*/
@@ -279,5 +297,38 @@ h5 {
     transform: scale(1.18);
     opacity: 1;
 }
+
+
+
+/* ----------------------------------------------- */
+/* ANIMATION*/
+/* ----------------------------------------------- */
+
+/* ---------HEADER FADE IN UP---------------- */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+
+
 
 /* linear-gradient(rgba(0, 0, 0, 0.55),rgba(0,0,0,0.55)); */
