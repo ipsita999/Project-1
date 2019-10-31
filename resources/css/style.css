@@ -17,15 +17,19 @@ html {
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
+
+body {
+    background-color: rgb(241, 241, 239);
+}
 /* ----------------------------------------------- */
 /* HERO*/
 /* ----------------------------------------------- */
-.hero{
-    /* background-attachment: fixed; */
+/* .hero{
+     background-attachment: fixed; 
     opacity: 0;
     animation: fadeInUP  1s ease-in 1s both;
-    -webkit-animation: fadeInUp 1s ease-in 1s both;
-}
+    -webkit-animation: fadeInUp 1s ease-in 1s both; 
+} */
 
  header {
     display: flex;
@@ -36,7 +40,9 @@ html {
     height: 100vh; 
     overflow: hidden;
     background-color: rgb(241, 241, 239);
-    background-attachment: fixed;
+    /* opacity: 0;
+    animation: fadeInUP  1s ease-in 1s both;
+    -webkit-animation: fadeInUp 1s ease-in 1s both; */
 
  }
 .hero-pic {
@@ -50,6 +56,9 @@ html {
     align-items: flex-start;
     justify-content: center;
     /* opacity: 0; */
+    opacity: 0;
+    animation: fadeInUP  1s ease-in 1s both;
+    -webkit-animation: fadeInUp 1s ease-in 1s both;
   
 }
  
@@ -107,9 +116,7 @@ h2{
     right: 50%;
     transform: translate(-50%, -50%);
     
-    
 }
-
 /* ----------------------------------------------- */
 /* NAVIGATION BAR */
 /* ----------------------------------------------- */
@@ -121,6 +128,7 @@ nav {
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 5px rgb(170, 168, 165);
+    z-index: 1;
   
 }
 .main-nav {
@@ -163,6 +171,7 @@ nav {
 
 .howto {
     height: 100vh;
+    background-color: #ffffff;
 }
 
 h3 {
@@ -239,6 +248,8 @@ h4 a{
 .shopsec{
     height:100vh;
     background-color:rgb(241, 241, 239);
+    padding-bottom:200px;
+    margin-bottom: 9%;
 }
 .shopheader{
     display: flex;
@@ -252,7 +263,7 @@ h5 {
     justify-content: center;
     /* align-items: flex-start; */
     /* margin: auto 0; */
-    padding-top: 6%;
+    padding-top: 5%;
     /* margin: 5% 0% 5% 0%; */
     color: #0f0e0e;
     font-size: 340%;
@@ -273,6 +284,9 @@ h5 {
     background-color: black;
 }
 
+.shopgrid2 {
+    /* padding-bottom: 10%; */
+}
 .sgrid {
     /* display: flex; */
     flex: auto;
@@ -298,6 +312,40 @@ h5 {
     opacity: 1;
 }
 
+
+/* ----------------------------------------------- */
+/* CONTACT ME*/
+/* ----------------------------------------------- */
+
+.contact{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.671)),url(contactpic.jpg);
+    background-size: cover;
+    background-position: center ;
+    align-items: flex-end;
+    height: 50vh;
+    /* margin-top: 20%; */
+    /* padding-top: 20%; */
+}
+
+button {
+    border: 2px solid #fff ;
+    padding: 20px ;
+    margin-top: 5%;
+    width: 20%;
+    background: transparent;
+    color: #fff;
+    font-size: 120%;
+    text-align: center;
+    cursor: pointer;
+}
+#btn {
+    margin: 3%;
+    font-size: 180%;
+    font-weight: 300;
+}
+
+    
 
 
 /* ----------------------------------------------- */
@@ -328,6 +376,12 @@ h5 {
     }
 }
 
+
+/* ----------------------------------------------- */
+/* MEDIA QUERIES*/
+/* ----------------------------------------------- */
+
+@media all and (max-width: 655px)
 
 
 
