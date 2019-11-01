@@ -154,6 +154,11 @@ nav {
     /* margin-left: 1px;  */
     margin-right: 21px;
 }
+.main-nav li img {
+    margin-right: 1000px;
+    
+  
+}
 
 .main-nav li a:link,
 .main-nav li a:visited {
